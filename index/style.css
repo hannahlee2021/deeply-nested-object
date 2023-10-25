@@ -1,11 +1,22 @@
 .day-1-strand-img {
-    width: 100px;
+    width: 200px;
     animation: drop 5s ease forwards;
   animation-iteration-count:infinite;
 }
-
+/* .day-1-strand-img.paused {
+  pointer-events: none;
+  animation-play-state: paused;
+} */
 @keyframes drop{
-    0%{opacity: 0}
-    70%{transform: translateY(700px)}
-    100%{transform: translateY(700px)}
+    0%{opacity: 100%}
+    70%{transform: translateY(600px)}
+    100%{transform: translateY(600px)}
+  }
+
+  #container1 {
+    position: absolute;
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 200px;
+    display: none;
   }

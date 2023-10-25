@@ -13,10 +13,44 @@
         hi
     </div>
     <div class = "day-1-hair">
-        <a href="google.com"><img class="day-1-strand-img" src="hairs/day-1-strand.png" width="100px"></a>
-
+        <a href="google.com"><img class="day-1-strand-img" src="hairs/day-1-strand.png" onmouseover="showContainer1()" onmouseout="hideContainer1()"width="100px"></a>
+        <div id="container1" style="display: none;">This is the container</div>
+        <div class = "day-1-info">
+            <h2 class = "day-title-1"></h2>
+            <h3 class = "time-1"></h3>
+            <h3 class = "num-1"></h3>
+            <h3 class = "texture-1"></h3>
+            <h3 class = "color-1"></h3>
+            <h3 class = "length-1"></h3>
+            <h3 class = "strand-length-1"></h3>
+            <div class = "emotion-before-1">
+                <h1 class = "leading-event">
+                    <h5 class = "location-1"></h5>
+                    <h5 class = "people-1"></h5>
+                    <h5 class = "mood-1"></h5>
+                </div>
+            </h4>
+         
+        </div>
+        
     </div>
-    
+    <script>
+        function showContainer1() {
+  var container1 = document.getElementById("container1");
+  container1.style.display = "block";
+  container1.style.left = (event.clientX+10) + "px";
+  container1.style.top = event.clientY+"px";
+
+  
+}
+
+function hideContainer1() {
+  var container1 = document.getElementById("container1");
+  container1.style.display = "none";
+}
+
+
+    </script>
     <script src="sketch.js"></script>
 </body>
 <!-- <script src="main.js"></script> -->
