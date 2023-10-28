@@ -1,0 +1,26 @@
+deeply-nested-object research
+
+name: hannah lee
+
+subject: habit
+
+description: for this project, i am going to explore my relationship with my habit of pulling out my hair. this is considered a medical condition known as trichotillomania, and it is something i have grappled with since i was 11 years old. within this project, i would like to delve into not just tracking the times i pull out my hair, but i would also like to account for the events/mood that drove me to pulling as well as the emotions i feel during and after the moment.
+
+research layout
+
+1. instances of hair pulling 
+	- take note of the times when each moment occurs as well as duration 
+	- compile everything daily to note number of instances in a day
+	- take note of consistencies
+2. emotions [before]
+	- what led to my hands going to my head and pulling
+	- take note of consistencies
+3. emotions [during]
+	- am i aware as i pull or am i in a state of cartharsis?
+	- are there feelings of instant gratification?
+	- take note of consistencies
+4. emotions [after]
+`	- do i feel negative emotions or neutral?
+	- take note of consistencies
+
+duration of research: 1 week?
