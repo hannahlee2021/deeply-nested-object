@@ -1,22 +1,166 @@
+/* strand images properties */
 .day-1-strand-img {
     width: 200px;
     animation: drop 5s ease forwards;
   animation-iteration-count:infinite;
 }
-/* .day-1-strand-img.paused {
-  pointer-events: none;
-  animation-play-state: paused;
-} */
+
+.day-2-strand-img {
+  position:absolute;
+  left: 300px;
+  width: 200px;
+  animation: drop 5s ease forwards;
+  animation-delay: 1s;
+animation-iteration-count:infinite;
+}
+
+.day-3-strand-img {
+  position:absolute;
+  left: 600px;
+  width: 50px;
+  animation: drop 6s ease forwards;
+  animation-delay: 2s;
+animation-iteration-count:infinite;
+}
+
+.day-4-strand-img {
+  position:absolute;
+  left: 800px;
+  width: 50px;
+  animation: drop 5s ease forwards;
+  animation-delay: 3s;
+animation-iteration-count:infinite;
+}
+
+.day-5-strand-img {
+  position:absolute;
+  left: 900px;
+  width: 200px;
+  animation: drop 5s ease forwards;
+  animation-delay: 2s;
+animation-iteration-count:infinite;
+}
+
+.day-6-strand-img {
+  position:absolute;
+  left: 1100px;
+  width: 100px;
+  animation: drop 5s ease forwards;
+  animation-delay: 1s;
+animation-iteration-count:infinite;
+}
+
+.day-7-strand-img {
+  position:absolute;
+  left: 1200px;
+  width: 75px;
+  animation: drop 5s ease forwards;
+  animation-delay: 3s;
+animation-iteration-count:infinite;
+}
+
+/* animation for the strand images */
 @keyframes drop{
     0%{opacity: 100%}
     70%{transform: translateY(600px)}
     100%{transform: translateY(600px)}
   }
 
+  /* containers for each day */
   #container1 {
     position: absolute;
-    background-color: blanchedalmond;
+    background-color: rgba(250, 6, 6, 0.40);
+    
     width: 200px;
     height: 200px;
     display: none;
   }
+
+  #container2 {
+    position: absolute;
+    background-color: rgba(250, 6, 6, 0.40);
+    width: 200px;
+    height: 200px;
+    display: none;
+  }
+
+  #container3 {
+    position: absolute;
+    background-color: rgba(250, 6, 6, 0.40);
+    width: 200px;
+    height: 200px;
+    display: none;
+  }
+
+  #container4 {
+    position: absolute;
+    background-color: rgba(250, 6, 6, 0.40);
+    width: 200px;
+    height: 200px;
+    display: none;
+  }
+
+  #container5 {
+    position: absolute;
+    background-color: rgba(250, 6, 6, 0.40);
+    width: 200px;
+    height: 200px;
+    display: none;
+  }
+
+  #container6 {
+    position: absolute;
+    background-color: rgba(250, 6, 6, 0.40);
+    width: 200px;
+    height: 200px;
+    display: none;
+  }
+
+  #container7 {
+    position: absolute;
+    background-color: rgba(250, 6, 6, 0.40);
+    width: 200px;
+    height: 200px;
+    display: none;
+  }
+
+  h1 {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    }
+
+  .day_1_info {
+    line-height: 10px;
+  }
+
+  .day_2_info {
+    line-height: 10px;
+  }
+
+  .day_3_info {
+    line-height: 10px;
+  }
+
+  .day_4_info {
+    line-height: 10px;
+  }
+
+  .day_5_info {
+    line-height: 10px;
+  }
+  
+  .day_6_info {
+    line-height: 10px;
+  }
+  
+  .day_7_info {
+    line-height: 10px;
+  }
+  

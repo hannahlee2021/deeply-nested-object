@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>    
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+  </style>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -9,50 +14,152 @@
     <title>deeply-nested-object</title>
 </head>
 <body>
-    <div id = "hi">
-        hi
-    </div>
+    
+    
+<!-- framework for all the days are the same -->
+<!-- explanations on first one explain the rest -->
+
+   <!-- day 1 data -->
     <div class = "day-1-hair">
+        <!-- image + js hover event -->
         <a href="google.com"><img class="day-1-strand-img" src="hairs/day-1-strand.png" onmouseover="showContainer1()" onmouseout="hideContainer1()"width="100px"></a>
-        <div id="container1" style="display: none;">This is the container</div>
-        <div class = "day-1-info">
-            <h2 class = "day-title-1"></h2>
-            <h3 class = "time-1"></h3>
+        <!-- container where data will be shown + initially hidden for mouseover event -->
+        <div id="container1" style="display: none;">
+      
+        <!-- placeholder classes for dynamic information  -->
+        <div class = "day_1_info">
+            <h1 class = "day_title_1"></h1>
+            <h3 class = "time_1"></h3>
             <h3 class = "num-1"></h3>
             <h3 class = "texture-1"></h3>
             <h3 class = "color-1"></h3>
             <h3 class = "length-1"></h3>
             <h3 class = "strand-length-1"></h3>
-            <div class = "emotion-before-1">
-                <h1 class = "leading-event">
-                    <h5 class = "location-1"></h5>
-                    <h5 class = "people-1"></h5>
-                    <h5 class = "mood-1"></h5>
-                </div>
-            </h4>
-         
-        </div>
-        
+            <h3 class = "emotion-before-1">
+                <h3 class = "leading-event">
+                    <h3 class = "location-1"></h3>
+                    <h3 class = "people-1"></h3>
+                    <h3 class = "mood-1"></h3>
+                    </h3>
+                </h3>
+            <h3 class = "emotion-during-1">
+                <h3 class = "awareness"></h3>
+                <h3 class = "instant-gratification"></h3>
+            </h3>
+            <h3 class = "emotion-after-1">
+                <h3 class = "negative"></h3>
+            </h3>
+        </div>   
     </div>
-    <script>
-        function showContainer1() {
-  var container1 = document.getElementById("container1");
-  container1.style.display = "block";
-  container1.style.left = (event.clientX+10) + "px";
-  container1.style.top = event.clientY+"px";
+</div>
+
+<div class = "day-2-hair">
+    <a href="google.com"><img class="day-2-strand-img" src="hairs/day-2-strand.png" onmouseover="showContainer2()" onmouseout="hideContainer2()"width="100px"></a>
+    <div id="container2" style="display: none;">
+    
+        <div class = "day_2_info">
+            <h1 class = "day_title_2"></h1>
+            <h3 class = "time_2"></h3>
+            <h3 class = "num-2"></h3>
+            <h3 class = "texture-2"></h3>
+            <h3 class = "color-2"></h3>
+            <h3 class = "emotion-before-2"></h3>
+            <h3 class = "emotion-during-2"></h3>
+            <h3 class = "emotion-after-2"></h3>
+    </div>
+</div>
+</div>
+
+<div class = "day-3-hair">
+    <a href="google.com"><img class="day-3-strand-img" src="hairs/day-3-strand.png" onmouseover="showContainer3()" onmouseout="hideContainer3()"width="10px"></a>
+    <div id="container3" style="display: none;">
+ 
+        <div class = "day_3_info">
+            <h1 class = "day_title_3"></h1>
+            <h3 class = "time_3"></h3>
+            <h3 class = "num-3"></h3>
+            <h3 class = "texture-3"></h3>
+            <h3 class = "color-3"></h3>
+            <h3 class = "emotion-before-3"></h3>
+            <h3 class = "emotion-during-3"></h3>
+            <h3 class = "emotion-after-3"></h3>
+        </div>
+</div>
+</div>
+
+<div class = "day-4-hair">
+    <a href="google.com"><img class="day-4-strand-img" src="hairs/day-4-strand.png" onmouseover="showContainer4()" onmouseout="hideContainer4()"></a>
+    <div id="container4" style="display: none;">
+
+        <div class = "day_4_info">
+            <h1 class = "day_title_4"></h1>
+            <h3 class = "time_4"></h3>
+            <h3 class = "num-4"></h3>
+            <h3 class = "texture-4"></h3>
+            <h3 class = "color-4"></h3>
+            <h3 class = "emotion-before-4"></h3>
+            <h3 class = "emotion-during-4"></h3>
+            <h3 class = "emotion-after-4"></h3>
+        </div>    
+</div>
+</div>
+
+<div class = "day-5-hair">
+    <a href="google.com"><img class="day-5-strand-img" src="hairs/day-1-strand.png" onmouseover="showContainer5()" onmouseout="hideContainer5()"></a>
+    <div id="container5" style="display: none;">
+
+        <div class = "day_5_info">
+            <h1 class = "day_title_5"></h1>
+            <h3 class = "time_5"></h3>
+            <h3 class = "num-5"></h3>
+            <h3 class = "texture-5"></h3>
+            <h3 class = "color-5"></h3>
+            <h3 class = "emotion-before-5"></h3>
+            <h3 class = "emotion-during-5"></h3>
+            <h3 class = "emotion-after-5"></h3>
+        </div>  
+</div>
+</div>
+
+<div class = "day-6-hair">
+    <a href="google.com"><img class="day-6-strand-img" src="hairs/day-2-strand.png" onmouseover="showContainer6()" onmouseout="hideContainer6()"></a>
+    <div id="container6" style="display: none;">
+
+        <div class = "day_6_info">
+            <h1 class = "day_title_6"></h1>
+            <h3 class = "time_6"></h3>
+            <h3 class = "num-6"></h3>
+            <h3 class = "texture-6"></h3>
+            <h3 class = "color-6"></h3>
+            <h3 class = "emotion-before-6"></h3>
+            <h3 class = "emotion-during-6"></h3>
+            <h3 class = "emotion-after-6"></h3> 
+        </div>   
+</div>
+</div>
+
+<div class = "day-7-hair">
+    <a href="google.com"><img class="day-7-strand-img" src="hairs/day-3-strand.png" onmouseover="showContainer7()" onmouseout="hideContainer7()"></a>
+    <div id="container7" style="display: none;">
+
+        <div class = "day_7_info">
+            <h1 class = "day_title_7"></h1>
+            <h3 class = "time_7"></h3>
+            <h3 class = "num-7"></h3>
+            <h3 class = "texture-7"></h3>
+            <h3 class = "color-7"></h3>
+            <h3 class = "emotion-before-7"></h3>
+            <h3 class = "emotion-during-7"></h3>
+            <h3 class = "emotion-after-7"></h3> 
+        </div>
+</div>
+</div>
 
   
-}
-
-function hideContainer1() {
-  var container1 = document.getElementById("container1");
-  container1.style.display = "none";
-}
-
-
-    </script>
     <script src="sketch.js"></script>
 </body>
-<!-- <script src="main.js"></script> -->
+
+
+<script src="main.js"></script>
 
 </html>
