@@ -55,16 +55,19 @@ function draw() {
 
   background(255)
 
+  //calling the function where everything that happens is defined
       scene0();
 
 
 }
 
-//assigning what happens in scene 0 (1st scene)
+//assigning what happens in scene 0 (aka the content)
 function scene0() {
 
+  //creating constant iterations
   for (let i = 0; i < iconNum; i++){
   
+  //calling the body + move constructors defined
   hair1[i].body()
   hair1[i].move()
 
@@ -85,26 +88,31 @@ function scene0() {
 
 //declaring icons for scene 0
 /* HAIR1 ICON */
+
+//defining the class for each hair icon
 class Hair{
   constructor(x,y){
 	this.x = x;
 	this.y = y;
-    //this.r = r;
-    //this.c = c;
+   
   }
   
+  //defines how the image is to be presented + placement on canvas
   body(){
-    //fill(this.c)
+    
     noStroke()
     image(icon_hair1,this.x,this.y,50,50);
    }
   
+   //defines how the image will move down the canvas
   move(){
     this.y++;
     if (this.y>height){
       this.y=0;
     }
   }
+
+  //defines when the image is to be removed from the canvas
   remove(){
     this.x = -100;
     this.y = -100;
